@@ -16,8 +16,8 @@ public class GenericsLAB {
     }
     
     System.out.println("");
-        
-    List<Employee> listGeneric = new ArrayList<>();
+   /////////////// #2//////////////////////////////////////////////////     
+    List<Employee> listGeneric = new ArrayList<Employee>();
     
     Employee employee1 = new Employee("Nowak","Brent","111-22-3333");
     Employee employee2 = new Employee("Smith","John","222-33-4444");
@@ -32,7 +32,7 @@ public class GenericsLAB {
     }
     
     System.out.println("");
-    
+    ///////////////#3//////////////////////////////////////////////////
     List listNonGenericMultObj = new ArrayList();
     
     Dog dog1 = new Dog();
@@ -51,14 +51,15 @@ public class GenericsLAB {
         }
     }
     
-    
+    ///////////////////#4//////////////////////////////////////////////
     Set<Employee> employeeSet = new HashSet<>();
     
     employeeSet.add(employee1);
     employeeSet.add(employee2);
     employeeSet.add(employee3);
     
-    System.out.println(employeeSet);
+    System.out.println(employeeSet + "\n");
+ 
     
     List<Employee> employeeSetList = new ArrayList<>(employeeSet);
     
